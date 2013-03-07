@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    
+     <item android:id="@+id/About" android:title="Acerca" android:icon="@drawable/about" android:showAsAction="ifRoom|withText"></item>
+</menu>

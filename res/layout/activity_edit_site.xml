@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditSite" >
+
+    
+
+    <EditText
+        android:id="@+id/editlat"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editdescription"
+        android:layout_below="@id/editdescription"
+        android:layout_toLeftOf="@+id/buscar" >
+
+        
+    </EditText>
+    
+    
+
+    <TextView
+        android:id="@+id/latitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editlat"
+        android:layout_alignLeft="@+id/description"
+        android:text="Latitud:" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editlat"
+        android:layout_alignLeft="@+id/name"
+        android:text="Descripcion:" />
+
+    <EditText
+        android:id="@+id/editname"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editdescription"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/editdescription"
+        android:ems="10" >
+
+        
+    </EditText>
+    
+    <EditText
+        android:id="@+id/editdescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/image"
+        android:layout_below="@id/editname" 
+        android:layout_marginRight="15sp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editdescription"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="18dp"
+        android:text="Nombre:" />
+    
+    <EditText
+        android:id="@+id/editlong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editlat"
+        android:layout_alignRight="@+id/editlat"
+        android:layout_below="@id/editlat" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editlong"
+        android:layout_alignLeft="@+id/description"
+        android:text="Longitud:" />
+
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_below="@+id/editlong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/places" />
+
+   <LinearLayout android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+       >
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:background="@drawable/botones" />
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" 
+        android:background="@drawable/botones" />
+       
+    
+    </LinearLayout>
+
+</RelativeLayout>

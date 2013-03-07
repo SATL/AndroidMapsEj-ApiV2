@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EjFinal</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_on_click">OnClick</string>
+    <string name="title_activity_edit_site">EditSite</string>
+    <string name="apikey">AIzaSyAAWwCBONWABsQMuTdZf-1RR_1maS097dc</string>
+    <string name="title_activity_imagen_click">ImagenClick</string>
+    <string name="acerca_de"><b>By Eslem</b>\n\n
+		2013 Ejercicio final\n
+		twitter: @slem03
+		</string>
+
+</resources>

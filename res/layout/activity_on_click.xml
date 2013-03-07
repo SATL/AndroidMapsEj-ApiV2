@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnClick" >
+
+    <ImageView 
+        android:layout_width="100sp"
+	    android:layout_height="100sp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="20sp"
+	    android:id="@+id/img"
+	    android:scaleType="centerInside"
+        
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/name"
+	    android:layout_below="@id/img"
+	    android:textStyle="bold"
+	    android:textSize="25sp"
+	    android:layout_centerHorizontal="true"
+        />
+    
+    <TextView 
+        android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/desc"
+	    android:layout_below="@id/name"
+	     android:layout_centerHorizontal="true"
+	     android:layout_marginLeft="5sp"
+	     android:layout_marginRight="5sp"
+        />
+    <LinearLayout
+        android:layout_marginTop="5sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc"
+        android:id="@+id/coordenadas"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:dividerPadding="10sp"
+         >
+
+        <TextView
+            android:id="@+id/latitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+             />
+
+        <TextView
+            android:id="@+id/longitud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coordenadas"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Editar" 
+        android:background="@drawable/botones" />
+
+</LinearLayout>
+        
+</RelativeLayout>
